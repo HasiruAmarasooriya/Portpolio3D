@@ -4,6 +4,7 @@ import Hero from "./components/Hero.jsx";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { useEffect } from "react";
+import About from "./components/About.jsx";
 
 export default function App() {
   // Initialize AOS (Animate On Scroll) library
@@ -33,6 +34,9 @@ export default function App() {
 
       {/*Hero Component*/}
       <Hero />
+
+      {/*About Section*/}
+      <About />
     </main>
   );
 }
