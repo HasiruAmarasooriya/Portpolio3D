@@ -27,12 +27,18 @@ const About = () => {
         data-aos-duration="1500"
         className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left mt-10 lg:mt-0"
       >
-        {/* Profile Image */}
-        <img
-          src="/my-image.jpg"
-          alt="My Profile"
-          className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover shadow-lg border-4 border-gray-300 mb-6"
-        />
+        {/* Radiant Gradient Image Wrapper */}
+        <div className="relative mb-6">
+          {/* Glowing Gradient Circle */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#e99b63] via-[#e763ff] to-[#63d2e9] blur-2xl opacity-60 scale-110 z-[-1]"></div>
+
+          {/* Actual Profile Image */}
+          <img
+            src="/my-image.jpg" // Replace with your image path
+            alt="My Profile"
+            className="w-52 h-52 sm:w-60 sm:h-60 rounded-full object-cover shadow-lg border-4 border-gray-300"
+          />
+        </div>
 
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-semibold mb-4 tracking-wide">
@@ -52,7 +58,7 @@ const About = () => {
 
         {/* Download CV Button */}
         <a
-          href="/Hasiru-CV.pdf"
+          href="/Hasiru-CV.pdf" // Place your CV file in the /public folder
           download
           className="mt-6 inline-block bg-gray-200 text-black hover:bg-black hover:text-white px-6 py-3 rounded-full font-semibold text-sm sm:text-base transition-all duration-300 shadow-md"
         >
