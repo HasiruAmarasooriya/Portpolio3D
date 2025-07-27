@@ -58,7 +58,7 @@ const Hero = () => {
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
         data-aos-offset="0"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
         className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full"
         scene="https://prod.spline.design/BpFqxuXwsfWRX-9z/scene.splinecode"
       />
